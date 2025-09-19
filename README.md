@@ -20,7 +20,9 @@ A C++ and SQL-based cafeteria management system built as a learning project to s
   - Find most popular item.
   - Show total sales.
 - Login (Admins only) 
-  - TODO : More secure password encryption. 
+  - TODO : More secure password encryption.
+ 
+  #### How to Complie - `g++ .\main.cpp -lsqlite3 -lssl -lcrypto -o .\Cafeteria.exe`
   <!--
   
   DB Structure 
