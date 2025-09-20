@@ -34,6 +34,8 @@ Password : `password`
   - Develop Web UI (frontend) [ PENDING ]
   - Admin Dashboard [ PENDING ]
 
+How to Complie : `g++ .\main.cpp -lsqlite3 -lssl -lcrypto -o .\Cafeteria.exe`
+
 <!--
   
   DB Structure 

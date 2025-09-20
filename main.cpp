@@ -38,9 +38,9 @@ class DB
             std::string sql = "SELECT * from Menu;";
             int rc;
             std::cout <<"Item            Name                    Price \n";
-            std::cout<<"--------------------------------------------------------------\n";
+            std::cout<<"-------------------------------------------------------------\n";
             rc = sqlite3_exec(db, sql.c_str(), callback, 0, &zErrMsg);
-            std::cout<<"--------------------------------------------------------------\n";   
+            std::cout<<"-------------------------------------------------------------\n";   
             return;
         }
         void insert_order(std::string& Item,int Qty){
