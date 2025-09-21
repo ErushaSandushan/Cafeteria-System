@@ -29,12 +29,31 @@ Password : `password`
   - User Management [ PENDING ]
   
 - Web UI
-  - Design REST API backend in C++ (Crow) [ PENDING ]
-  - Connect SQLite database to backend for live data retrieval and updates [ PENDING ]
-  - Develop Web UI (frontend) [ PENDING ]
+  - Design REST API backend in C++ (Crow) [ DONE ]
+  - Connect SQLite database to backend for live data retrieval and updates [ DONE ]
+  - Develop Web UI (frontend) [ DONE ]
   - Admin Dashboard [ PENDING ]
 
 How to Complie : `g++ .\main.cpp -lsqlite3 -lssl -lcrypto -o .\Cafeteria.exe`
+
+# Web API (Not Smooth)
+
+Please clone below repos
+    - `https://github.com/chriskohlhoff/asio.git`
+    - `https://github.com/CrowCpp/Crow.git`
+
+How to complie : `g++ -std=c++17 main.cpp -o API -I Crow/include -lsqlite3 -I asio/include -lws2_32 -lmswsock`
+
+Please note that your folder path needs to arranged as below
+```bash
+/WEBAPI/   
+    -- Crow/
+    -- asio/
+    -- templates/
+    -- main.cpp
+```
+
+![](./Imgs/API.png)
 
 <!--
   
@@ -42,6 +61,5 @@ How to Complie : `g++ .\main.cpp -lsqlite3 -lssl -lcrypto -o .\Cafeteria.exe`
     - Menu items
     - Users
     - Orders
-    - Reports
   
   >

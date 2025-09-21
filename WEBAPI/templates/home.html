@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Home | Cafeteria</title>
+</head>
+<body>
+    <style>
+        body{
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            font-family: 'Poppins';
+        }
+        table{
+            margin-left: 10%;
+            width: 80%;
+        }
+        td,th,table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr:hover {background-color: #D6EEEE;}
+        select{
+            margin-right: 5%;
+        }
+        input{
+            height: 1%;
+            width: 4%;
+        }
+        #buy{
+            font-size: 16px;
+            width: 5%;
+            margin-left: 100px;
+            background-color: white;
+            border: gray solid 1px;
+            }
+        a{
+            font-size: 16px;
+            width: 5%;
+            height: 30px;
+            border: 1px black solid;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            }
+        
+    </style>
+    <h1>Welcome to Trincomalee Campus Cafeteria</h1>
+{{{table}}}
+<br><br>
+<form action="/order">
+  <label for="Item">Choose a Item:</label>
+  <select id="Item" name="Item">
+{{{options}}}
+</select>
+  
+  <label for="qty">Quantity</label>
+  <input type="text" name="qty" id="qty">
+  <input id="buy" type="submit" placeholder="Buy" value="Buy">
+</form>
+<br>
+<br><a href="/admin">Login (Admin) </a>
+</body>
+</html>
